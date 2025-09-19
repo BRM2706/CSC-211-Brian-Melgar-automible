@@ -1,0 +1,13 @@
+public class JunkCar extends Automobile {
+    public JunkCar(int year, String b) {
+        super(year, b);
+    }
+
+    public void accelerate() {
+        System.out.println(brand + " tries to go but makes loud noise");
+    }
+
+    public void honk() {
+        System.out.println(brand + " makes a weak honk...");
+    }
+}
