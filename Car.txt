@@ -1,0 +1,10 @@
+public class Car extends Automobile {
+    public Car(int modelYear, String brand) {
+        super(modelYear, brand);
+    }
+
+    @Override
+    public void honk() {
+        System.out.println(brand + " (" + modelYear + ") honks: Honk honk");
+    }
+}
