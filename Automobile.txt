@@ -1,0 +1,41 @@
+public class Automobile implements Comparable<Automobile> {
+    int modelYear;
+    String brand;
+
+    public Automobile(int year, String b) {
+        modelYear = year;
+        brand = b;
+    }
+
+    public void honk() {
+        System.out.println(brand + " honks Beep");
+    }
+
+    public void accelerate() {
+        System.out.println(brand + " goes faster");
+    }
+
+    public void stop() {
+        System.out.println(brand + " stopped");
+    }
+
+    public void reverse() {
+        System.out.println(brand + " is going backwards");
+    }
+
+    public int compareTo(Automobile other) {
+        return this.modelYear - other.modelYear;
+    }
+
+    public boolean equals(Object obj) {
+        if (obj instanceof Automobile) {
+            Automobile other = (Automobile) obj;
+            return this.modelYear == other.modelYear && this.brand.equals(other.brand);
+        }
+        return false;
+    }
+
+    public String toString() {
+        return brand + " " + modelYear;
+    }
+}
