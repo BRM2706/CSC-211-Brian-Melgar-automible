@@ -1,0 +1,13 @@
+public class SportsCar extends Automobile {
+    public SportsCar(int year, String b) {
+        super(year, b);
+    }
+
+    public void accelerate() {
+        System.out.println(brand + " zooms really fast");
+    }
+
+    public void honk() {
+        System.out.println(brand + " beeps loudly");
+    }
+}
