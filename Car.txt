@@ -1,0 +1,9 @@
+public class Car extends Automobile {
+    public Car(int year, String b) {
+        super(year, b);
+    }
+
+    public void honk() {
+        System.out.println(brand + " goes Honk Honk!");
+    }
+}
